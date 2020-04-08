@@ -7,7 +7,7 @@ const CheckerBoard = ({ boardSize }) => {
     const checkerBoard = [];
 
     for (let i = 0; i < Math.pow(parseInt(boardSize), 2); i++) {
-      checkerBoard.push(<CheckerBoardCell index={i} />);
+      checkerBoard.push(<CheckerBoardCell index={i} key={i}/>);
     }
 
     return (
