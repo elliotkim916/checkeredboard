@@ -1,6 +1,6 @@
 import React from 'react';
 import CheckerBoardCell from '../CheckerBoardCell/CheckerBoardCell';
-import './CheckerBoard.css';
+import styles from './CheckerBoard.module.css';
 
 const CheckerBoard = ({ boardSize }) => {
   if (boardSize) {
@@ -16,7 +16,7 @@ const CheckerBoard = ({ boardSize }) => {
 
     return (
       <div 
-        className="container" 
+        className={styles.container} 
         style={{ width: boardSize * 102, height: boardSize * 102 }}
       >
         {checkerBoard}

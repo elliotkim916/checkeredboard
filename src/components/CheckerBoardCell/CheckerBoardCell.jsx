@@ -1,10 +1,10 @@
 import React from 'react';
-import './CheckerBoardCell.css';
+import styles from './CheckerBoardCell.module.css';
 
 const CheckerBoardCell = ({ row, column }) => {
   return (
     <div 
-      className="cell"
+      className={styles.cell}
       style={{backgroundColor: (row + column) % 2 === 0 ? 'black' : 'white'}} 
     >
     </div>
